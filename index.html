@@ -74,16 +74,16 @@ const side_effect_options = [
 ];
 
 function generate() {
-    var temperature = Math.round(getRandomArbitrary(34.0, 40.0) * 10) / 10;
-    var v = vaccine[getRandomInt(0, vaccine.length-1)];
-    var a = arm[getRandomInt(0, arm.length-1)];
-    var ae = arm_effects[getRandomInt(0, arm_effects.length-1)];
-    var e1 = side_effect_options[getRandomInt(0, side_effect_options.length-1)];
-    var e2 = side_effect_options[getRandomInt(0, side_effect_options.length-1)];
+    var temperature = Math.round(getRandomArbitrary(34.0, 41.0) * 10) / 10;
+    var v = vaccine[getRandomInt(0, vaccine.length)];
+    var a = arm[getRandomInt(0, arm.length)];
+    var ae = arm_effects[getRandomInt(0, arm_effects.length)];
+    var e1 = side_effect_options[getRandomInt(0, side_effect_options.length)];
+    var e2 = side_effect_options[getRandomInt(0, side_effect_options.length)];
     
-    days = getRandomInt(1, 100);
-    time = getRandomInt(1, 100);
-    timing = (getRandomInt(0, 100) % 2) == 0 ? '前' : '後'
+    days = getRandomInt(1, 101);
+    time = getRandomInt(1, 101);
+    timing = (getRandomInt(0, 101) % 2) == 0 ? '前' : '後'
     vaccine_report_time = 'ワクチン接種' + days + '日と' +  time + '時間' + timing + '。'
     
     msg = v + vaccine_report_time
