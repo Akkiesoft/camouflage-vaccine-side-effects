@@ -1,0 +1,9 @@
+= ワクチンの副反応ジェネレーター
+
+== for Web
+
+* https://akkiesoft.github.io/camouflage-vaccine-side-effects/
+
+== for mikutter
+
+* mikutter_camouflage_vaccine_side_effects.rb
